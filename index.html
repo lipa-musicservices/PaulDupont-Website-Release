@@ -26,8 +26,8 @@
 
       if(MobileCheck() == true)
       {
-        document.getElementById('responsive-iframe1').style.zoom = 0.3;
-        document.getElementById('responsive-iframe2').style.zoom = 0.3;
+        document.getElementById('responsive-iframe1').style.zoom = 0.1;
+        document.getElementById('responsive-iframe2').style.zoom = 0.1;
 
         document.getElementById('Test1').innerHTML = "Mobile";
       }
@@ -159,24 +159,6 @@
         $("#HeadBar").load("FixedPages/HeadBar.html"); 
         $("#FootBar").load("FixedPages/FootBar.html"); 
     });
-</script> 
-
-<script>
-    var txtFile1 = new XMLHttpRequest();
-    var allText1 = "";
-
-    txtFile1.onreadystatechange = function () {
-        if (txtFile1.readyState === XMLHttpRequest.DONE && txtFile1.status == 200) {
-          allText1 = txtFile1.responseText;
-          allText1 = allText1.split("\n").join("<br>");
-        }
-
-        document.getElementById('TitleText').innerHTML = allText1;
-    }
-    
-    txtFile1.open("GET", "Texts/TitleText.txt", true);
-    txtFile1.send(null);
-
 </script> 
 
 <script>
