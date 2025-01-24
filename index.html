@@ -17,6 +17,8 @@
     function ResizeFunction(){
       document.getElementById('responsive-iframe1').style.zoom = (window.innerWidth * (50/1520) + 37.5) / 100;
       document.getElementById('responsive-iframe2').style.zoom = (window.innerWidth * (50/1520) + 37.5) / 100;
+
+      document.getElementById('Test1').innerHTML = window.innerWidth;
     }
   </script> 
 
@@ -27,7 +29,7 @@
     <div>
       <video style="margin-bottom:-2pt" width="100%" class="BackgroundVideoMain" src="Resources/Videos/PaulDupont Website Titelvideo V2.mp4" loop="true" autoplay="true" muted="true" preload="auto"></video>
     </div>
-
+    <div style="text-align: center;" id="Test1">Test</div>
     <div class="PageBackground">
       <table width="100%">
         <tr height="600pt">
