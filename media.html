@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paul Dupont | Media</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="FixedPages/styleHeadbar.css"></link>
+    <link rel="stylesheet" href="FixedPages/styleHeadbar.css"></link>
+
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    
+    <link rel="icon" type="image/png" href="Resources/Bass-Logo.png">
+  </head>
+
+  <body>
+    <div id="HeadBar"></div>
+
+    <div class="PageBackground">
+
+      <div class="Spacer"></div>
+      <table class="FrameTable">
+        <tr>
+          <th class="FrameSides" width="10%"></th>
+          <th class="FrameContent" width="80%">
+            <div class="Headline1">
+              Media
+            </div>
+          </th>
+          <th class="FrameSides" width="10%"></th>
+        </tr>
+    </table>
+    <div class="Spacer"></div>
+    <table class="FrameTable">
+      <tr height="350vw">
+        <th class="FrameSides" width="5%"></th>
+        <th class="FrameContent" width="30%">
+          <iframe width="95%" height="300vw" src="https://www.youtube.com/embed/7xtyLZiHJWo?si=NuMryOEAQOVSoBhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </th>
+        <th class="FrameContent" width="30%">
+          <iframe width="95%" height="300vw" src="https://www.youtube.com/embed/3acdfOQ-6M4?si=Soy4dxT0Yq_np3Xx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </th>
+        <th class="FrameContent" width="30%">
+          <iframe width="95%" height="300vw" src="https://www.youtube.com/embed/_xX3JPYF03U?si=cB91vIdSOrznQNnD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </th>
+        <th class="FrameSides" width="5%"></th>
+      </tr>
+      <tr>
+        <th class="FrameSides" width="5%"></th>
+        <th class="FrameContent" width="30%">
+          <iframe width="95%" height="300vw" src="https://www.youtube.com/embed/kI7XEXk3s_s?si=Ce0dFoH1kWkSLDie" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </th>
+        <th class="FrameContent" width="30%">
+          <iframe width="95%" height="300vw" src="https://www.youtube.com/embed/7_vM2MEG70I?si=QJSBPzI7UQoBMjHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </th>
+        <th class="FrameContent" width="30%">
+          <iframe width="95%" height="300vw" src="https://www.youtube.com/embed/3br1fDxBCIg?si=2GItROTAq_AbR-oS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </th>
+        <th class="FrameSides" width="5%"></th>
+      </tr>
+    </table>
+    <table class="FrameTable">
+      <tr>
+        <th class="FrameSides" width="10%"></th>
+        <th class="FrameContent" width="80%">
+          <div class="Spacer"></div>
+          <div class="Spacer"></div>
+          <div class="Headline2">
+            Instagram:
+          </div>
+          <div class="Spacer"></div>
+          <iframe style="background-color: rgb(189, 189, 189);border: 2px black solid" src='https://widgets.sociablekit.com/instagram-feed/iframe/25514556' frameborder='0' width='100%' height='1000px'></iframe>
+        </th>
+        <th class="FrameSides" width="10%"></th>
+      </tr>
+      </table>
+      <div class="Spacer"></div>
+      <div class="Spacer"></div>
+    </div>
+    
+    <div id="FootBar"></div>
+
+  </body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script> 
+
+  $(function(){
+      $("#HeadBar").load("FixedPages/HeadBar.html"); 
+      $("#FootBar").load("FixedPages/FootBar.html"); 
+  });
+</script> 
+
+
+<script>
+  var txtFile1 = new XMLHttpRequest();
+    var allText1 = "";
+
+    txtFile1.onreadystatechange = function () {
+        if (txtFile1.readyState === XMLHttpRequest.DONE && txtFile1.status == 200) {
+          allText1 = txtFile1.responseText;
+          allText1 = allText1.split("\n").join("<br>");
+        }
+
+        document.getElementById('AboutText').innerHTML = allText1;
+    }
+    
+    txtFile1.open("GET", "Texts/AboutText.txt", true);
+    txtFile1.send(null);
+</script>

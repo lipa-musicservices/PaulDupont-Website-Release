@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paul Dupont | Über mich</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="styleHeadbar.css"></link>
+    <link rel="stylesheet" href="styleFootbar.css"></link>
+
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    
+    <link rel="icon" type="image/png" href="Resources/Bass-Logo.png">
+  </head>
+
+  <body onresize="ResizeFunction()" onload="ResizeFunction()">
+    <div id="HeadBar"></div>
+
+    <div class="PageBackground">
+
+      <div class="Spacer"></div>
+      <table class="FrameTable">
+        <tr>
+          <th class="FrameSides" width="10%"></th>
+          <th class="FrameContent" width="80%">
+            <div class="Headline1">
+              Über mich
+            </div>
+          </th>
+          <th class="FrameSides" width="10%"></th>
+        </tr>
+    </table>
+    <div class="Spacer"></div>
+    <table class="FrameTable" width="100%">
+        <tr>
+          <th class="FrameSides" width="20%"></th>
+          <th class="FrameContent" width="60%">
+            <div width="80%" class="AboutText">
+              Der 2000 im badischen Schwetzingen geborene Bassist/Pianist Paul Dupont begann seine ersten musikalischen Schritte 2005 am Klavier.
+              Mit 13 Jahren wurde der Bass als neues Hauptinstrument aufgenommen. Schnell entwickelte sich neben des bereits stark vertretenen Interesses für Funk und Soul 
+              unter Anderem durch Bassunterricht bei Philipp Rehm das Interesse in Richtung Jazz.
+              </br>
+            </br>
+              Bei verschiedenen Jazz-Workshops lernte er früh Mitmusiker wie bspw. Moritz Langmeier, Malte Wiest und Lukas Wögler kennen, aus denen die Band "Tenor Madness" entstand, 
+              welche Pauls musikalische Entwicklung durch Konzerte in ganz Süddeutschland verteilt stark bestimmte.
+            </br>
+          </br>
+              Parallel dazu gründete er mit seinem Schulfreund Adrian Gallet das "Blue Groove Quartet", dessen Programm hauptsächlich aus Eigenkompositionen bestehen, welche sich 
+              im Genre des Fusion-Jazz bewegen und von Paul selbst als "Arabic-HipHop-Fusion-Groovemusic-Funk-Jazz" bezeichnet werden.
+            </br>
+          </br>
+              Ebenfalls lernte er auf Workshops den Baden-Badener Schlagzeuger Konstantin Kölmel kennen, welcher bei der Gründung des "Konstantin Kölmel Quartetts" neben Jakob 
+              Bänsch an der Trompete und Justin Zitt am Klavier Paul Dupont am Bass engagierte, nachdem er bereits als Gast den Bass bei einigen Aufnahmen der CD des Konstantin 
+              Kölmel Trios einspielte. Gemeinsam mit dem Konstantin Kölmel Quartett arbeitete Paul Dupont bspw. mit dem Kölner Trompeter Menzel Mutzke zusammen.
+            </br>
+          </br>
+              2016 wurde er vom Posaunisten Heiko Raubach und dem Bassisten Jens Kreft als Organist in die Disco-Formation "Urban Dance Machine" aufgenommen, in welcher er u.a. 
+              gemeinsam mit den Sängerinnen Carolyne Pirulli und Ira Diehr, dem Schlagzeuger Michl Fischer oder auch dem Percussionisten Thomas Hammer arbeitet.
+            </br>
+          </br>
+              2020 stieg Paul Dupont als Bassist und Keyboarder bei der vom Gitarristen Pascal Schopp gegründeten Speyrer Prog Metal Band "Alternative Ways" ein, welche bis heute 
+              zwei Alben veröffentlichte. 
+              
+              Seit 2021 ist Paul Dupont festes Mitglied der Partyband "The JamRays" rund um Sänger Jeremy Riley, welche Konzerte in ganz Europa spielt. 
+            </div>
+          </th>
+          <th class="FrameSides" width="20%"></th>
+        </tr>
+      </table>
+      <div class="Spacer"></div>
+      <div class="Spacer"></div>
+
+    </div>
+    </div>
+
+    <div id="FootBar"></div>
+
+  </body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script> 
+
+$(function(){
+        $("#HeadBar").load("FixedPages/HeadBar.html"); 
+        $("#FootBar").load("FixedPages/FootBar.html"); 
+    });
+</script> 

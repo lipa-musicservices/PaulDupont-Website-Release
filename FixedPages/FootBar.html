@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FootBar</title>
+
+    <link rel="stylesheet" href="FixedPages/styleFootbar.css"></link>
+  </head>
+  <body>
+    <footer>
+      <div class="FootBar">
+        <table class="FooterTable" width="100%">
+          <tr>
+            <th width="5%"></th>
+            <th width="30%">
+              <div class="BandLinks">
+                <a href="mailto:pauldupont.music@gmail.com?subject=Website-Anfrage%20-%20" target=”_blank”><img src="/Resources/Logos/Mail.png" style="width:10%;height:10%;"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.instagram.com/pauldupont87/" target=”_blank”><img src="/Resources/Logos/Instagram.png" style="width:10%;height:10%;"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.facebook.com/paul.dupont.7370013/" target=”_blank”><img src="/Resources/Logos/Facebook.png" style="width:10%;height:10%;"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.linkedin.com/in/paul-dupont-5a426b1bb/" target=”_blank”><img src="/Resources/Logos/LinkedIn.png" style="width:10%;height:10%;"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://app.backstagepro.de/benutzer/paul-dupont-yg2l5sgXCs" target=”_blank”><img src="/Resources/Logos/BackstagePro.png" style="width:10%;height:10%;"></a>
+              </div></th>
+            <th width="30%"><div id="Adress" class="FooterText">Paul Dupont</br>67655 Kaiserslautern</div></th>
+            <th width="30%">
+              <div class="FooterInternalLinksDiv">
+                <a class="FooterInternalLink" href="index.html">Home</a></br>
+                <a class="FooterInternalLink" href="about.html">About</a></br>
+                <a class="FooterInternalLink" href="bands.html">Bands</a></br>
+                <a class="FooterInternalLink" href="media.html">Media</a></br>
+                <a class="FooterInternalLink" href="bassgear.html">Bass-Gear</a></br>
+                <a class="FooterInternalLink" href="impressum.html">Impressum</a></br>
+              </div>
+            </th>
+            <th width="5%"></th>
+          </tr>
+          
+        </table>
+        <table class="FooterTable" width="100%">
+          <tr>
+            <th width="10%"></th>
+            <th width="80%">
+              <div class="CopyrightNoticeFooter">
+                <p>Copyright &copy;&nbsp;<p id="VARCurYear"></p></p>
+                
+                <p>&nbsp;- Paul Dupont</p>
+              </div>
+            </th>
+            <th width="10%"></th>
+          </tr>
+        </table>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script>
+  document.getElementById("VARCurYear").innerHTML = new Date().getFullYear();
+</script>
