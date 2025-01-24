@@ -27,12 +27,15 @@
       if(MobileCheck() == true)
       {
         var Zoom = 0.1;
+        var NewWidth = document.getElementById("responsive-iframe1").style.width / Zoom;
+        var NewHeight = document.getElementById("responsive-iframe1").style.height / Zoom;
         document.getElementById("responsive-iframe1").style.scale = Zoom;
         document.getElementById("responsive-iframe2").style.scale = Zoom;
 
         document.getElementById("Test1").innerHTML = "Mobile3";
 
-        document.getElementById("responsive-iframe1").style.height = "1000pt";
+        document.getElementById("responsive-iframe1").style.height = NewHeight;
+        document.getElementById("responsive-iframe1").style.width = Width;
       }
       else
       {
