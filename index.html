@@ -27,8 +27,8 @@
         document.getElementById('responsive-iframe1').style.zoom = (window.innerWidth * (50/1520) + 37.5) / 100;
         document.getElementById('responsive-iframe2').style.zoom = (window.innerWidth * (50/1520) + 37.5) / 100;
 
-        if(CheckMobile == true){
-          document.getElementById("ContactTableLeft").style.width = 0;
+        if(CheckMobile() == true){
+          document.getElementById("ContactTableLeft").style.width = "0%";
           document.getElementById("ContactTableRight").style.width = "80%";
         }
         else
