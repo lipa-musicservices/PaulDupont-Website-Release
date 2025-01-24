@@ -27,13 +27,13 @@
       if(MobileCheck() == true)
       {
         var Zoom = 0.1;
-        var NewWidth = document.getElementById("responsive-iframe1").style.width / Zoom;
-        var NewHeight = document.getElementById("responsive-iframe1").style.height / Zoom;
+        var NewWidth = document.getElementById("responsive-iframe1").getBoundingClientRect().width / Zoom;
+        var NewHeight = document.getElementById("responsive-iframe1").getBoundingClientRect().height / Zoom;
 
         document.getElementById("responsive-iframe1").style.scale = Zoom;
         document.getElementById("responsive-iframe2").style.scale = Zoom;
 
-        document.getElementById("Test1").innerHTML = NewWidth + " " + NewHeight;
+        document.getElementById("Test1").innerHTML = document.getElementById("responsive-iframe1").getBoundingClientRect().width + " " + NewWidth + " " + NewHeight;
 
         document.getElementById("responsive-iframe1").style.height = NewHeight;
         document.getElementById("responsive-iframe1").style.width = NewWidth;
@@ -44,7 +44,7 @@
         document.getElementById('responsive-iframe1').style.zoom = (window.innerWidth * (50/1520) + 37.5) / 100;
         document.getElementById('responsive-iframe2').style.zoom = (window.innerWidth * (50/1520) + 37.5) / 100;
 
-        document.getElementById('Test1').innerHTML = Zoom;
+        document.getElementById('Test1').innerHTML = Zoom + " - " + document.getElementById("responsive-iframe1").getBoundingClientRect().width;
       }
     }
 
